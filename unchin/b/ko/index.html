@@ -25,15 +25,19 @@
 html,body{margin:0;background:#0d0b12;color:#f3ece4;font-family:system-ui,sans-serif}
 main{max-width:640px;margin:0 auto;padding:24px 16px;text-align:center}
 img{width:100%;height:auto;border-radius:8px}
-a{display:inline-block;margin-top:20px;padding:12px 24px;border-radius:999px;background:#e8c46a;color:#0d0b12;font-weight:700;text-decoration:none}
+iframe{display:block;width:100%;max-width:646px;height:190px;margin:20px auto 0;border:0}
+.moving{font-size:20px;font-weight:700;color:#e8c46a}
+a{color:#e8c46a}
 </style>
 </head>
 <body>
 <main>
 <img src="https://mumimumi.github.io/chemy-share/img/unchin_b_ko.jpg" alt="똥꼬 개찰구 동결" width="1200" height="630">
+<p class="moving" hidden>Steam 상점 페이지로 이동합니다</p>
 <p>동생을 스테이크나 고기만두로 요리하는 말장난 덱빌딩 로그라이트. 요리에 쓸 마력은 동생의 대사를 마법 카드로 고쳐 써서 쭉 빨아들이세요. 주사기, 칼, 누름돌… 요리하다 보면 동생은 머리만 남거나 소가 되기도 해요. 단, 음담패설을 빨아들이면 조리 도구가... 폭발!!</p>
-<a href="https://store.steampowered.com/app/4843170/?l=koreana&amp;utm_source=share&amp;utm_medium=social&amp;utm_campaign=minigame_share&amp;utm_content=unchin_b">Steam 상점 페이지로</a>
+<iframe src="https://store.steampowered.com/widget/4843170/?l=koreana" title="Steam 상점 페이지로" width="646" height="190" frameborder="0" loading="eager"></iframe>
+<p><a href="https://store.steampowered.com/app/4843170/?l=koreana&amp;utm_source=share&amp;utm_medium=social&amp;utm_campaign=minigame_share&amp;utm_content=unchin_b">Steam 상점 페이지로</a></p>
 </main>
-<script>location.replace("https://store.steampowered.com/app/4843170/?l=koreana&utm_source=share&utm_medium=social&utm_campaign=minigame_share&utm_content=unchin_b");</script>
+<script>document.querySelector(".moving").hidden = false; setTimeout(function () { location.replace("https://store.steampowered.com/app/4843170/?l=koreana&utm_source=share&utm_medium=social&utm_campaign=minigame_share&utm_content=unchin_b"); }, 1200);</script>
 </body>
 </html>
